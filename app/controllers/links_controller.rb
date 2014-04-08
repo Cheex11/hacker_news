@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
   def index
-    @links = Link.order_by_score
+    @links = Link.order_by_modified_score
   end
 
   def show
