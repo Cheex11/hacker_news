@@ -7,7 +7,7 @@
       <a href="http://<%=link.url%>"><%= link.title %> </a>
       (<%=link.url%>)
     </li>
-    <p class='title_info'> <%=link.score.to_i%> points. | comments | <%= link_to "delete", link_path(link), :method => 'delete' %>  </p>
+    <p class='title_info'> <%=link.score.to_i%> points. | comments | Created <%=link.age%> ago  | <%= link_to "delete", link_path(link), :method => 'delete' %>  </p>
   <% end %>
 </ol>
 
