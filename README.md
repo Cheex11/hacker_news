@@ -38,3 +38,10 @@ FactoryGirl: https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STAR
 Capybara: https://github.com/jnicklas/capybara#using-capybara-with-rspec.
 
 Also, examples from LHTP: https://github.com/epicodus/textbook/tree/master/spec/features.
+
+##################################################################################
+
+http://learn.thoughtbot.com/test-driven-rails-resources/capybara.pdf
+https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
+https://github.com/epicodus/textbook/blob/master/spec/features/lessons_pages_spec.rb
+
