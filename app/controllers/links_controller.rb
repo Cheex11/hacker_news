@@ -3,6 +3,10 @@ class LinksController < ApplicationController
     @links = Link.order_by_score
   end
 
+  def show
+    @link = Link.find(params[:id])
+  end
+
   def new
     @link = Link.new
   end

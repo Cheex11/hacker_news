@@ -5,6 +5,8 @@ describe Link do
   it { should validate_presence_of :url }
   it { should validate_presence_of :title }
 
+  it { should have_many :comments }
+
   describe '.order_by_score' do
     it 'should order the links' do
       link = FactoryGirl.create(:link)

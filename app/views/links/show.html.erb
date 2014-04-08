@@ -1,0 +1,10 @@
+<h1><%=@link.title %></h1>
+
+
+<% @link.comments.each do |comment| %>
+  <br>
+  <p><%= comment.description %></p>
+  <br>
+<% end %>
+
+<%= link_to "Add a comment", new_link_comment_path(@link), :class => "btn btn-default" %>
