@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HackerNews</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="wrapper">
+  <nav>
+    <%= link_to 'Home', :root %> |
+    <%= link_to 'New', links_path %> |
+    <%= link_to 'Comments', links_path %> |
+    <%= link_to 'Submit', new_link_path %>
+  </nav>
+  <h2><%= flash[:notice] %></h2>
+  <%= yield %>
+</div>
+</body>
+</html>

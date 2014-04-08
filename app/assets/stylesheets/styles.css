@@ -1,0 +1,29 @@
+body {
+  font-family: 'Lusitana', serif;
+}
+
+#wrapper {
+  width:1000px;
+  margin:10px auto;
+  padding: 20px;
+  background-color: #B5B8BF;
+  border-radius: 20px;
+}
+
+
+nav {
+  width: 600px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  background-color: #F5AB0E;
+  font-size: 15px;
+  /*font-weight: bold;*/
+  color: #4E525D;
+  text-align: center;
+
+}
+
+.title_info {
+  list-style: none;
+  font-size: 10px;
+}

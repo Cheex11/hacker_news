@@ -1,0 +1,14 @@
+<h1>Hacker News</h1>
+
+<ol>
+  <% @links.each do |link| %>
+    <li>
+      <%= link_to "↑", links_path %>
+      <a href="http://<%=link.url%>"><%= link.title %> </a>
+      (<%=link.url%>)
+    </li>
+    <p class='title_info'> <%=link.score%> points. | comments </p>
+  <% end %>
+</ol>
+
+<%= link_to "Add a new link", new_link_path, :class=> "btn btn-default" %>
