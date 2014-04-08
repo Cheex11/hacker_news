@@ -25,10 +25,18 @@ describe Link do
   end
 
   describe '#age' do
-    it 'should return the hours since the link was created' do
+    it 'should return the days since the link was created' do
       link = FactoryGirl.create(:link)
       link.update(:created_at => '2014-04-05 10:36 PDT')
       link.age.should eq "3 days"
+    end
+  end
+
+  describe '#age' do
+    it 'should return the minutes since the link was created' do
+      link = FactoryGirl.create(:link)
+      link.update(:created_at => '2014-04-08 14:32 PDT')
+      link.age.should eq "31 minutes"
     end
   end
 end
