@@ -17,7 +17,7 @@ DONE - As a user, I want the link ranking to be a function of both the number of
 
 DONE - As a user, I want to comment on a link, so that I can have a discussion about the article that was submitted.
 
-As a user, I want to comment on a comment, so that I can have a discussion about the comment. Hint: use polymorphism so that a comment can belong to a post or to another comment. Your associations will look something like this:
+ANOTHER DAY - As a user, I want to comment on a comment, so that I can have a discussion about the comment. Hint: use polymorphism so that a comment can belong to a post or to another comment. Your associations will look something like this:
 
     class Comment < ActiveRecord::Base
       belongs_to :commentable, :polymorphic => true

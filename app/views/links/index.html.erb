@@ -4,7 +4,7 @@
   <% @links.each do |link| %>
     <li>
       <%= link_to "↑", link_path(link, "link[score]" => (link.score.to_i + 1)), :method => :patch %>
-      <a href="http://<%=link.url%>"><%= link.title %> </a>
+      <a href="<%=link.url%>"><%= link.title %> </a>
       (<%=link.url%>)
     </li>
     <p class='title_info'> <%=link.score.to_i%> points. | <%= link_to "#{link.comments.length} comments", link_path(link) %> | Created <%=link.age%> ago  | <%= link_to "delete", link_path(link), :method => 'delete' %>  </p>

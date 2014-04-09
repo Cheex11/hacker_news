@@ -3,7 +3,11 @@
 
 <% @link.comments.each do |comment| %>
   <br>
-  <p><%= comment.description %></p>
+  <div class="comment">
+    <p><%= comment.description %></p>
+    <p><%= link_to "Edit", edit_link_comment_path(@link, comment), :class => "comment-link" %> |
+      <%= link_to "Delete", link_comment_path(@link, comment), :method => 'delete', :class => 'comment-link' %></p>
+  </div>
   <br>
 <% end %>
 

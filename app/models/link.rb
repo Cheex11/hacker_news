@@ -7,6 +7,8 @@ class Link < ActiveRecord::Base
   validates :title, :presence => true
   validates :url, :presence => true
 
+  before_save :prefix_url
+
   def self.order_by_score
     Link.order(:score => :desc)
   end
@@ -41,5 +43,14 @@ class Link < ActiveRecord::Base
       result = "#{(age/60/60/24).to_i} days"
     end
     result
+  end
+
+  private
+
+  def prefix_url
+    regex = /http/
+    unless self.url.match(regex)
+      self.url = "http://#{self.url}"
+    end
   end
 end
