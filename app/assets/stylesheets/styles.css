@@ -13,14 +13,14 @@ body {
 
 
 nav {
-  width: 600px;
-  margin: 0 auto 20px auto;
-  border-radius: 10px;
+  width: 980px;
+  padding: 5px;
+  margin: 5px auto 20px auto;
+  border-radius: 2px;
   background-color: #F5AB0E;
   font-size: 15px;
   /*font-weight: bold;*/
   color: #4E525D;
-  text-align: center;
 
 }
 
