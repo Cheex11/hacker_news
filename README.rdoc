@@ -1,6 +1,0 @@
-The README is your new cheat sheet!
-FactoryGirl: https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md#defining-factories.
-
-Capybara: https://github.com/jnicklas/capybara#using-capybara-with-rspec.
-
-Also, examples from LHTP: https://github.com/epicodus/textbook/tree/master/spec/features.
